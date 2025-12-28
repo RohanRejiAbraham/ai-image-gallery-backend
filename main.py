@@ -5,6 +5,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from google import genai
+
+
 from google.genai import types  # Required for strict data validation
 from supabase_client import supabase
 
