@@ -16,16 +16,16 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ai-image-galleryui-2ayidjfi5-rohans-projects-28969eb7.vercel.app"], 
+    allow_origins=["https://ai-image-galleryui.vercel.app"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# 2. Initialize Gemini Client
+
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-# 3. AI Analysis Function
+
 
 def analyze_image_with_ai(image_url: str):
     
