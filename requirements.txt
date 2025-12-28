@@ -4,4 +4,4 @@ python-dotenv
 requests
 pillow
 supabase
-google-generativeai
+google-genai
